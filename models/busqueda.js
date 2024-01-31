@@ -56,6 +56,7 @@ class Busquedas {
             const instance = axios.create({
                 baseURL: `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&appid=e5669d6c1899676bb7f628c90be96134`,
                 // params: {...this.paramsWeather, lat,lon}
+                
             });
             const resp = await instance.get();
             const {weather, main} = resp.data; // Desdestructuracion
